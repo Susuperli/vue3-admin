@@ -8,16 +8,18 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     component: Layout,
     redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard/index.vue'),
-      meta: {
-        title: 'Dashboard',
-        icon: 'dashboard',
-        affix: true
+    children: [
+      {
+        path: 'dashboard',
+        name: 'Dashboard',
+        component: () => import('@/views/dashboard/index.vue'),
+        meta: {
+          title: 'Dashboard',
+          icon: 'dashboard',
+          affix: true
+        }
       }
-    }]
+    ]
   }
 ]
 

@@ -21,7 +21,7 @@
     @apply bg-red w-[var(--sidebar-width)];
   }
 
-  .main-container { 
+  .main-container {
     @apply flex-1;
   }
   .header {
@@ -35,7 +35,7 @@
   }
 
   .app-main {
-    @apply bg-[#f5f5f5] ;
+    @apply bg-[#f5f5f5];
     min-height: calc(100vh - var(--navbar-height) - var(--tagsView-height));
   }
 }
