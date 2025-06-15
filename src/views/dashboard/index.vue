@@ -1,15 +1,23 @@
 <template>
-  <el-button>{{ a }}</el-button>
+  <el-button>hello</el-button>
 
-  <HelloWorld msg="Hello Vue3" />
+  <svg-icon
+    icon-name="https://zishui.oss-cn-beijing.aliyuncs.com/BugFilled.svg"
+    custom-class="text-blue-100"
+    @click="show"
+  ></svg-icon>
+    <svg-icon
+    icon-name="ant-design:apple-filled"
+    custom-class="text-blue-100"
+    @click="show"
+  ></svg-icon>
 
-  <el-button @click="show">按钮</el-button>
 </template>
 
 <script setup lang="ts">
 const { proxy } = getCurrentInstance()!
 
-const a = ref(0)
+// const a = ref(0)
 const show = () => {
   proxy?.$message('成功')
 }
