@@ -1,0 +1,8 @@
+@import './variables.module.scss';
+
+// 主要功能是把scss变量映射为css样式，通过var的方式可以在全局使用
+:root {
+  --sidebar-width: #{$sideBarWidth};
+  --navbar-height: #{$navBarHeight};
+  --tagsView-height: #{$tagsViewHeight};
+}
