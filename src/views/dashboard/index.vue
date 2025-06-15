@@ -6,12 +6,11 @@
     custom-class="text-blue-100"
     @click="show"
   ></svg-icon>
-    <svg-icon
+  <svg-icon
     icon-name="ant-design:apple-filled"
     custom-class="text-blue-100"
     @click="show"
   ></svg-icon>
-
 </template>
 
 <script setup lang="ts">
