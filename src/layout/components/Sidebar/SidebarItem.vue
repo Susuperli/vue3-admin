@@ -1,10 +1,7 @@
 <template>
   <!-- 我们需要将路由表中的路径进行添加 index-->
   <template v-if="!item.meta?.hidden">
-    <sidebar-item-link
-      v-if="filteredChildren.length <= 1 && item.meta?.alwaysShow"
-      :to="resolvePath(singleChildRoute.path)"
-    >
+    <sidebar-item-link v-if="filteredChildren.length <= 1" :to="resolvePath(singleChildRoute.path)">
       <el-menu-item :index="resolvePath(singleChildRoute.path)">
         <el-icon v-if="iconName">
           <svg-icon :icon="iconName" />
@@ -18,7 +15,7 @@
         <el-icon v-if="iconName">
           <svg-icon :icon="iconName" />
         </el-icon>
-        <span>{{ singleChildRoute.meta?.title }}</span>
+        <span>{{ item.meta?.title }}</span>
       </template>
 
       <sidebar-item
@@ -47,6 +44,8 @@ const singleChildRoute = computed(() =>
   filteredChildren.value.length === 1 ? filteredChildren.value[0] : item
 )
 
+console.log(item, '?')
+
 const iconName = computed(() => singleChildRoute.value.meta?.icon)
 
 // 解析父路径 + 子路径 (resolve可以解析绝对路径)
@@ -54,6 +53,6 @@ const resolvePath = (childPath: string) => {
   if (isExternal(childPath)) {
     return childPath
   }
-  path.resolve(basePath, childPath)
+  return path.join(basePath, childPath)
 }
 </script>

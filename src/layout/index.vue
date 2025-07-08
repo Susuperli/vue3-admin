@@ -11,9 +11,8 @@
         <div class="tags-view">导航条-2</div>
       </div>
 
-      <div class="app-main">
-        <router-view></router-view>
-      </div>
+      <!-- 这是核心渲染部分 -->
+      <app-main></app-main>
     </div>
   </div>
 </template>
@@ -37,11 +36,6 @@
     .tags-view {
       @apply h-[var(--tagsView-height)] bg-yellow;
     }
-  }
-
-  .app-main {
-    @apply bg-[#f5f5f5];
-    min-height: calc(100vh - var(--navbar-height) - var(--tagsView-height));
   }
 }
 </style>

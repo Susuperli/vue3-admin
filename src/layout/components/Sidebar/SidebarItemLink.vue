@@ -8,11 +8,13 @@
 import { isExternal } from '@/utils/validate'
 
 const { to } = defineProps<{ to: string }>()
+const isExt = computed(() => isExternal(to))
+
 const componentType = computed(() => {
-  return isExternal(to) ? 'a' : 'router-link'
+  return isExt.value ? 'a' : 'router-link'
 })
 
 const componentProps = computed(() => {
-  return componentType.value === 'a' ? { href: to, target: '_blank' } : { to }
+  return isExt.value ? { href: to, target: '_blank' } : { to }
 })
 </script>
