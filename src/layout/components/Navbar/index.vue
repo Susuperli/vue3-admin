@@ -1,8 +1,12 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" flex>
     <hamburger @toggleCollapse="toggleSideBar" :collapse="sidebar.opened"></hamburger>
 
     <breadcrumb-item></breadcrumb-item>
+
+    <div flex justify-end flex-1 items-center>
+      <screenfull></screenfull>
+    </div>
   </div>
 </template>
 
