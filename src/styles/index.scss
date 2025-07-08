@@ -5,4 +5,9 @@
   --sidebar-width: #{$sideBarWidth};
   --navbar-height: #{$navBarHeight};
   --tagsView-height: #{$tagsViewHeight};
+  --menu-bg: #{$menuBg};
+}
+
+a {
+  @apply active:(decoration-none) however:(decoration-none);
 }

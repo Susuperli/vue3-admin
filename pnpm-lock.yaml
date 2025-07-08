@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@types/path-browserify':
+        specifier: ^1.0.3
+        version: 1.0.3
       '@unocss/preset-icons':
         specifier: ^66.2.0
         version: 66.2.0
@@ -20,6 +23,9 @@ importers:
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
+      path-browserify:
+        specifier: ^1.0.1
+        version: 1.0.1
       pinia-plugin-persistedstate:
         specifier: ^4.3.0
         version: 4.3.0
@@ -715,6 +721,9 @@ packages:
 
   '@types/node@22.15.3':
     resolution: {integrity: sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==}
+
+  '@types/path-browserify@1.0.3':
+    resolution: {integrity: sha512-ZmHivEbNCBtAfcrFeBCiTjdIc2dey0l7oCGNGpSuRTy8jP6UVND7oUowlvDujBy8r2Hoa8bfFUOCiPWfmtkfxw==}
 
   '@types/web-bluetooth@0.0.16':
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
@@ -2798,6 +2807,8 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/path-browserify@1.0.3': {}
+
   '@types/web-bluetooth@0.0.16': {}
 
   '@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.25.1(jiti@2.4.2))(typescript@5.7.3)':
@@ -4399,7 +4410,7 @@ snapshots:
       espree: 10.3.0
       esquery: 1.6.0
       lodash: 4.17.21
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
 

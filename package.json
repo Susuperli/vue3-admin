@@ -12,10 +12,12 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@types/path-browserify": "^1.0.3",
     "@unocss/preset-icons": "^66.2.0",
     "@unocss/transformer-directives": "^66.2.0",
     "element-plus": "^2.10.2",
     "normalize.css": "^8.0.1",
+    "path-browserify": "^1.0.1",
     "pinia-plugin-persistedstate": "^4.3.0",
     "unplugin-element-plus": "^0.10.0",
     "vue": "^3.5.13",

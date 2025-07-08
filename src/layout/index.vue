@@ -22,6 +22,7 @@
 .app-wrapper {
   @apply flex w-full h-full;
   .sidebar-container {
+    @apply bg-[var(--menu-bg)];
     // 跨组件设置样式
     :deep(.sidebar-container-menu:not(.el-menu--collapse)) {
       @apply w-[var(--sidebar-width)];
